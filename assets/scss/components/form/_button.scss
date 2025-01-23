@@ -10,8 +10,8 @@
   --btn-bg-h: transparent;
   --btn-bg-f: transparent;
   --btn-bg-d: var(--light);
-  --btn-h: 45px;
-  --btn-w: 60px;
+  // --btn-h: 45px;
+  // --btn-w: 60px;
   --btn-bs: transparent;
   --btn-size: 0.9rem;
   --box-s: var(--shadow);
@@ -59,7 +59,6 @@
   &.btn-icon {
     --btn-p: 8px 10px;
     --btn-size: 1.5rem;
-    --btn-w: 50px;
   }
 
   &.btn-light {
@@ -72,26 +71,6 @@
   }
 }
 
-@keyframes ripple-animation {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-
-.btn.ripple {
-  position: relative;
-  overflow: hidden;
-
-  .ripple-effect {
-    position: absolute;
-    border-radius: 50%;
-    background: #ffffff80; // Default ripple color
-    transform: scale(0);
-    animation: ripple-animation 0.6s linear;
-    pointer-events: none;
-  }
-}
 .btn-primary {
   --btn-bg: var(--primary);
   --btn-bg-h: var(--primary-hover);
@@ -101,7 +80,7 @@
   --btn-c-h: #fff;
   --btn-c-f: #fff;
   --btn-c-d: #fff;
-  // --btn-bs: var(--primary-rgb);
+  --btn-bs: var(--primary-rgb);
   --btn-b: 1px solid rgba(var(--primary-rgb, 0.5));
 }
 .btn-secondary {
@@ -173,9 +152,8 @@
   --btn-c-h: var(--text);
   --btn-c-f: var(--text);
   --btn-c-d: var(--text);
-  box-shadow: 0px 1px 5px 0px #00000040;
-  // --btn-bs: var(--shadow);
-  // --btn-b: 1px solid rgba(var(--light-rgb, 0.5));
+  --btn-bs: var(--shadow);
+  --btn-b: 1px solid rgba(var(--light-rgb, 0.5));
 }
 .btn-dark {
   --btn-bg: var(--dark);
@@ -204,7 +182,7 @@
   --btn-fs: 1rem;
 }
 .btn-pill {
-  --btn-br: 50px;
+  --btn-rounded: 50px;
 }
 .btn-icon {
   display: inline-flex;

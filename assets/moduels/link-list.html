@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    body {
+        height: 100vh;
+        background: rgba(238, 238, 238, 1);
+        padding: 100px 0px;
+    }
+</style>
+
+<body>
+
+    <div class="boxed">
+        <div class="link-list">
+            <table class="product-table">
+                <thead>
+                    <th><label class="check check-success"><input type="checkbox"></label></th>
+                    <th>Images</th>
+                    <th>Name / Description</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Availablity</th>
+                    <th>Qty</th>
+                    <th>Sale / Discount</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody>
+                    <td>
+                        <label class="check check-success"><input type="checkbox"></label>
+                    </td>
+                    <td>
+                        <div class="product-images">
+                            <img src="../images/product-image.png" class="image" alt="">
+                            <img src="../images/product-image.png" class="image" alt="">
+                            <img src="../images/product-image.png" class="image" alt="">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="product-desc">
+                            <h1>Pasta Cheese</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua</p>
+                        </div>
+                    </td>
+                    <td>Dinner</td>
+                    <td>$ 99.99</td>
+                    <td>
+                        <span class="badge badge-dark">Out of Stock</span>
+                    </td>
+                    <td>700</td>
+                    <td>-10%</td>
+                    <td>
+                        <div class="edit-del">
+                            <i class="bx bx-edit-alt"></i>
+                            <i class='bx bxs-trash-alt'></i>
+                        </div>
+                    </td>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

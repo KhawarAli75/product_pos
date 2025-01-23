@@ -7,12 +7,24 @@
   --primary-focus: #199544;
   --primary-disable: rgba(25, 150, 68, 0.5);
   --primary-rgb: 25, 150, 68;
-  --warning: #ff2a2a;
-  --warning-subtle: #ffe2e2;
-  --warning-hover: #ff5d5d;
-  --warning-focus: #ff2929;
-  --warning-disable: rgba(255, 42, 42, 0.5);
-  --warning-rgb: 255, 42, 42;
+  --secondary: #6d0000;
+  --secondary-subtle: #ff2626;
+  --secondary-hover: #a00000;
+  --secondary-focus: #6c0000;
+  --secondary-disable: rgba(109, 0, 0, 0.5);
+  --secondary-rgb: 109, 0, 0;
+  --warning: #ff912a;
+  --warning-subtle: #fff0e2;
+  --warning-hover: #ffab5d;
+  --warning-focus: #ff9029;
+  --warning-disable: rgba(255, 145, 42, 0.5);
+  --warning-rgb: 255, 145, 42;
+  --info: #1e6cd9;
+  --info-subtle: #b9d2f5;
+  --info-hover: #4588e5;
+  --info-focus: #1e6cd8;
+  --info-disable: rgba(30, 108, 217, 0.5);
+  --info-rgb: 30, 108, 217;
   --danger: #ff0000;
   --danger-subtle: #ffb8b8;
   --danger-hover: #ff3333;
@@ -7052,7 +7064,7 @@ body {
   align-items: center;
   padding: 0 5px;
   border-radius: 50px;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 .inline-list .list-item:hover {
   background-color: var(--primary);
@@ -7071,6 +7083,7 @@ body {
   font-weight: 600;
   line-height: 30px;
   width: 100%;
+  transition: all 0.2s ease-in-out;
 }
 
 .social-links {
@@ -8156,8 +8169,6 @@ body {
   --btn-bg-h: transparent;
   --btn-bg-f: transparent;
   --btn-bg-d: var(--light);
-  --btn-h: 45px;
-  --btn-w: 60px;
   --btn-bs: transparent;
   --btn-size: 0.9rem;
   --box-s: var(--shadow);
@@ -8200,7 +8211,6 @@ body {
 .btn.btn-icon {
   --btn-p: 8px 10px;
   --btn-size: 1.5rem;
-  --btn-w: 50px;
 }
 .btn.btn-light {
   --color: var(--body);
@@ -8208,25 +8218,6 @@ body {
 }
 .btn.btn-light:hover {
   --color: var(--text);
-}
-
-@keyframes ripple-animation {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
-.btn.ripple {
-  position: relative;
-  overflow: hidden;
-}
-.btn.ripple .ripple-effect {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5019607843);
-  transform: scale(0);
-  animation: ripple-animation 0.6s linear;
-  pointer-events: none;
 }
 
 .btn-primary {
@@ -8238,6 +8229,7 @@ body {
   --btn-c-h: #fff;
   --btn-c-f: #fff;
   --btn-c-d: #fff;
+  --btn-bs: var(--primary-rgb);
   --btn-b: 1px solid rgba(var(--primary-rgb, 0.5));
 }
 
@@ -8315,7 +8307,8 @@ body {
   --btn-c-h: var(--text);
   --btn-c-f: var(--text);
   --btn-c-d: var(--text);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2509803922);
+  --btn-bs: var(--shadow);
+  --btn-b: 1px solid rgba(var(--light-rgb, 0.5));
 }
 
 .btn-dark {
@@ -8347,7 +8340,7 @@ body {
 }
 
 .btn-pill {
-  --btn-br: 50px;
+  --btn-rounded: 50px;
 }
 
 .btn-icon {
@@ -8436,7 +8429,7 @@ body {
   color: var(--color);
   border-radius: var(--rounded);
   padding: var(--icon-p);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .icon:hover {
   --color: var(--body);

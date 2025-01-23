@@ -1,0 +1,16 @@
+table {
+    --table-w: 100%;
+    --table-border-w: 1px;
+    --table-border-s: solid;
+    --table-border-c: var(--border);
+    --table-padding: 0px;
+    --table-collapse: collapse;
+    --table-active-bg: #CDE9D6;
+    --table-thead-c: var(--text);
+    --table-thead-bg: #E3E3E3;
+    --table-tbody-c: var(--text);
+    --table-tbody-bg: var(--body);
+    --table-tfoot-bg: #FFBABA00;    
+    width: var(--table-w);
+    border-collapse: var(--table-collapse);
+}
