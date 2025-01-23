@@ -1,0 +1,48 @@
+.list-simple {
+  list-style: circle;
+  list-style-position: inside;
+  color: var(--muted);
+  margin: 10px 0;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+    font-size: clamp(16px, 80vw, 18px);
+    line-height: clamp(22px, 80vw, 24px);
+
+    b {
+      font-weight: 600;
+    }
+  }
+}
+
+.inline-list {
+  margin: 0;
+  padding: 0;
+  .list-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    border-radius: 50px;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: var(--primary);
+      .list-link {
+        color: var(--body);
+      }
+      .icon {
+        color: var(--body);
+      }
+    }
+    .list-link {
+      --fs: 16px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: var(--fs);
+      font-weight: 600;
+      line-height: 30px;
+      width: 100%;
+    }
+  }
+}
