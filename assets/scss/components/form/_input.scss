@@ -1,0 +1,77 @@
+.form-input-group {
+  --input-b-w: 2px;
+  --input-b-c: var(--border);
+  --input-focus-b-c: var(--primary);
+  --input-validate: var(--danger);
+  --input-c: #c6c6c6;
+  --input-rounded: var(--rounded);
+  --label-c: #c6c6c6;
+  --label-focus-c: var(--primary);
+  --label-fs: 14px;
+  --label-rounded: 30px;
+  --icon-c: #c6c6c6;
+  --icon-size: 27px;
+  width: 100%;
+  position: relative;
+
+  &.validation-wrng {
+    .form-input:focus {
+      border: 2px solid var(--input-validate);
+    }
+
+    .form-input:focus ~ .form-input-label,
+    .form-input:focus ~ .input-icon,
+    .form-input:focus ~ .incorrect {
+      color: var(--danger);
+    }
+  }
+
+  .form-input-label {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    transform: translateY(-50%);
+    color: var(--label-c);
+    background-color: var(--body);
+    font-size: var(--label-fs);
+    padding: 0 10px;
+    border-radius: var(--label-rounded);
+    transition: all 0.25s ease-in-out;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 14px 10px;
+    color: var(--input-c);
+    border: var(--input-b-w) solid var(--input-b-c);
+    border-radius: var(--input-rounded);
+    transition: border 0.25s ease-in-out;
+    outline: none;
+
+    &[type="password"] {
+        font-size: 20px;
+        .input-icon {
+            top: 14px;
+        }
+    }
+
+    &:focus {
+      border: 2px solid var(--input-focus-b-c);
+      color: #000000bd;
+    }
+  }
+
+  .input-icon {
+    color: var(--icon-c);
+    background: var(--body);
+    font-size: var(--icon-size);
+    position: absolute;
+    right: 14px;
+    top: 10px;
+  }
+}
+
+.form-input:focus ~ .form-input-label,
+.form-input:focus ~ .input-icon {
+  color: var(--primary);
+}

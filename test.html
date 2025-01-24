@@ -2,69 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Model-1</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag drop</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<style>
+  .form-input-group {
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    color: var(--border);
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    transition: border 0.25s ease-in-out;
+    outline: none;
+
+    &:focus {
+      border: 2px solid var(--primary);
+    }
+  }
+
+  .form-input-label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-50%);
+    color: var(--border);
+    background-color: var(--body);
+    font-size: 14px;
+    padding: 0 10px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .form-input:focus~.form-input-label {
+    color: var(--primary);  
+  }
+</style>
 
 <body>
+  <div class="form-input-group">
+    <input class="form-input" type="text" placeholder="#sadfjksj">
+    <label class="form-input-label">Lastname *</label>
+  </div>
 
-    <form class="form-field">
-        <!-- Label and Input Field -->
-        <div class="field field-primary">
-          <label for="name" class="field-label">Name</label>
-          <input type="text" id="name" class="field-text" placeholder="Enter your name" />
-        </div>
-      
-        <!-- Label and Select Field -->
-        <div class="field field-success">
-          <label for="options" class="field-label">Options</label>
-          <select id="options" class="field-select">
-            <option value="" disabled selected>Select an option</option>
-            <option value="1">Option 1</option>
-            <option value="2">Option 2</option>
-            <option value="3">Option 3</option>
-          </select>
-        </div>
-      
-        <!-- Label and Textarea Field -->
-        <div class="field field-warning">
-          <label for="message" class="field-label">Message</label>
-          <textarea id="message" class="field-textarea" placeholder="Write your message"></textarea>
-        </div>
-      
-        <!-- Inline Fields -->
-        <div class="field field-inline">
-          <label for="email" class="field-label">Email</label>
-          <input type="email" id="email" class="field-text" placeholder="Enter your email" />
-        </div>
-      
-        <!-- Small Field -->
-        <div class="field field-sm field-secondary">
-          <label for="phone" class="field-label">Phone</label>
-          <input type="tel" id="phone" class="field-text" placeholder="Enter your phone" />
-        </div>
-      
-        <!-- Large Field -->
-        <div class="field field-lg field-danger">
-          <label for="address" class="field-label">Address</label>
-          <input type="text" id="address" class="field-text" placeholder="Enter your address" />
-        </div>
-      
-        <!-- Error and Hint Text -->
-        <div>
-          <span class="field-error-text">This is an error message.</span>
-          <span class="field-hint-text">This is a hint message.</span>
-        </div>
-      
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-light">Submit</button>
-      </form>
-      
-    
-    <script src="../js/main.js"></script>
+  <div class="form-input-group">
+    <input class="form-input" type="password" placeholder="******">
+    <label class="form-input-label">Password *</label>
+  </div>
+
 </body>
 
 </html>

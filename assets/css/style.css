@@ -7415,6 +7415,44 @@ body {
     right: 20px !important;
   }
 }
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  color: #7c7c7c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.pagination li:hover {
+  background-color: #e0e0e0;
+}
+.pagination li.active {
+  background-color: #0c9c4d;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.pagination li.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.pagination li.arrow {
+  font-size: 18px;
+  color: #7c7c7c;
+}
+
 .card {
   --card-bg: var(--body);
   --card-b: blur(20px);
@@ -8608,6 +8646,75 @@ select {
   display: block;
 }
 
+.form-input-group {
+  --input-b-w: 2px;
+  --input-b-c: var(--border);
+  --input-focus-b-c: var(--primary);
+  --input-validate: var(--danger);
+  --input-c: #c6c6c6;
+  --input-rounded: var(--rounded);
+  --label-c: #c6c6c6;
+  --label-focus-c: var(--primary);
+  --label-fs: 14px;
+  --label-rounded: 30px;
+  --icon-c: #c6c6c6;
+  --icon-size: 27px;
+  width: 100%;
+  position: relative;
+}
+.form-input-group.validation-wrng .form-input:focus {
+  border: 2px solid var(--input-validate);
+}
+.form-input-group.validation-wrng .form-input:focus ~ .form-input-label,
+.form-input-group.validation-wrng .form-input:focus ~ .input-icon,
+.form-input-group.validation-wrng .form-input:focus ~ .incorrect {
+  color: var(--danger);
+}
+.form-input-group .form-input-label {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  transform: translateY(-50%);
+  color: var(--label-c);
+  background-color: var(--body);
+  font-size: var(--label-fs);
+  padding: 0 10px;
+  border-radius: var(--label-rounded);
+  transition: all 0.25s ease-in-out;
+}
+.form-input-group .form-input {
+  width: 100%;
+  padding: 14px 10px;
+  color: var(--input-c);
+  border: var(--input-b-w) solid var(--input-b-c);
+  border-radius: var(--input-rounded);
+  transition: border 0.25s ease-in-out;
+  outline: none;
+}
+.form-input-group .form-input[type=password] {
+  font-size: 20px;
+}
+.form-input-group .form-input[type=password] .input-icon {
+  top: 14px;
+}
+.form-input-group .form-input:focus {
+  border: 2px solid var(--input-focus-b-c);
+  color: rgba(0, 0, 0, 0.7411764706);
+}
+.form-input-group .input-icon {
+  color: var(--icon-c);
+  background: var(--body);
+  font-size: var(--icon-size);
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+
+.form-input:focus ~ .form-input-label,
+.form-input:focus ~ .input-icon {
+  color: var(--primary);
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -9063,4 +9170,141 @@ select {
 
 .mb-5 {
   margin-bottom: 3rem;
+}
+
+table {
+  --table-w: 100%;
+  --table-border-w: 1px;
+  --table-border-s: solid;
+  --table-border-c: var(--border);
+  --table-padding: 0px;
+  --table-collapse: collapse;
+  --table-active-bg: #cde9d6;
+  --table-thead-c: var(--text);
+  --table-thead-bg: #e3e3e3;
+  --table-th-padding: 10px;
+  --table-tbody-c: var(--text);
+  --table-tbody-bg: var(--body);
+  --table-tfoot-bg: #ffbaba00;
+  width: var(--table-w);
+  border-collapse: var(--table-collapse);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 10px;
+  overflow: hidden;
+}
+table thead {
+  background-color: var(--table-thead-bg);
+}
+table thead tr th {
+  padding: var(--table-th-padding);
+  color: var(--table-thead-c);
+  font-weight: 600;
+}
+table thead tr th:nth-child(2) {
+  width: 300px;
+}
+table thead tr th:nth-child(3) {
+  width: 340px;
+  text-align: left;
+}
+table tbody {
+  background-color: var(--body);
+}
+table tbody tr {
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid #dfe1e2;
+}
+table tbody tr:hover {
+  background-color: #cde9d6;
+}
+table tbody tr:hover td:first-child {
+  border-top-left-radius: 20px; /* Top-left corner */
+  border-bottom-left-radius: 20px;
+}
+table tbody tr:hover td:last-child {
+  border-top-right-radius: 20px; /* Top-right corner */
+  border-bottom-right-radius: 20px;
+}
+table tbody tr:hover td .badge-primary {
+  --badge-bg: transparent;
+  border-color: var(--primary);
+}
+table tbody tr td {
+  position: relative;
+  padding: 30px 10px;
+  align-content: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.5s ease-in-out;
+}
+table tbody tr td:nth-child(3) {
+  text-align: left;
+}
+table tbody tr td .product-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table tbody tr td .product-images .image {
+  width: 45px;
+  height: 55px;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  position: absolute;
+  top: 24px;
+  z-index: 2;
+}
+table tbody tr td .product-images .image:nth-child(2) {
+  transform: rotate(-18deg);
+  left: 98px;
+  z-index: 1;
+  top: 28px;
+}
+table tbody tr td .product-images .image:nth-child(3) {
+  transform: rotate(18deg);
+  right: 103px;
+  z-index: 1;
+  top: 28px;
+}
+table tbody tr td .product-desc h1 {
+  font-weight: 600;
+}
+table tbody tr td .product-desc p {
+  font-size: 9px;
+}
+table tbody tr td .edit-del .edit {
+  color: var(--primary);
+  font-size: 20px;
+}
+table tbody tr td .edit-del .del {
+  color: rgba(255, 0, 0, 0.6705882353);
+  font-size: 20px;
+}
+table tbody .badge-dark {
+  --badge-bg: #d6d6d6;
+  --badge-color: #555555;
+}
+table tbody .badge-primary {
+  --badge-color: var(--primary);
+  border: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+}
+table tfoot tr {
+  background-color: var(--table-tfoot-bg);
+}
+table tfoot tr td {
+  padding: 10px;
+}
+table tfoot tr td .footer-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+table tfoot tr td .footer-pagination .counting {
+  color: #7C7C7C;
+}
+table .check {
+  --check-br: 50%;
 }
