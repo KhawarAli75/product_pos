@@ -20,8 +20,8 @@
   --card-foot-h: auto;
   --card-title-c: var(--text);
   --card-title-fs: clamp(18px, 80vw, 22px);
-  --card-title-lh: clamp(22px, 80vw, 28px);
-  --card-title-m: 15px;
+  --card-title-lh: clamp(20px, 70vw, 24px);
+  --card-title-m: 0px;
   --card-title-fw: 600;
   --card-subtitle-c: var(--text);
   --card-subtitle-fs: clamp(16px, 80vw, 18px);
@@ -132,15 +132,15 @@
   .card-icon {
     color: var(--text);
     border-radius: 50px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     border: 2px solid var(--primary);
     border-radius: 5px;
     min-height: 60px;
     min-width: 60px;
-    max-height: 80px;
-    max-width: 80px;
-    margin-bottom: 15px;
-    padding: 10px;
+    max-height: 100%;
+    max-width: 100%;
+    // margin-bottom: 15px;
+    // padding: 10px;
   }
 
   .card-image {

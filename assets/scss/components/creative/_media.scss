@@ -28,6 +28,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .badge {
+      --badge-size: 8px;
+    }
   }
 
   .media-heading {
@@ -59,7 +62,7 @@
       font-weight: 500;
       font-size: clamp(14px, 80vw, 16px);
       line-height: clamp(20px, 80vw, 22px);
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
     .media-foot {
       display: flex;

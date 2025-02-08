@@ -5,11 +5,12 @@
   background-color: var(--body);
   border-radius: 10px;
   overflow: hidden;
-  width: fit-content;
+  // width: fit-content;
   width: 100%;
+  
   .tab {
     flex: 1;
-    padding: 16px 20px;
+    padding: 12px 20px;
     font-size: 14px;
     font-weight: bold;
     text-align: center;

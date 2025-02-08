@@ -1,63 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offcanvas</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drag drop</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<style>
-  .form-input-group {
-    margin: 15px 0;
-    width: 100%;
-    position: relative;
-    display: flex;
-  }
-
-  .form-input {
-    width: 100%;
-    padding: 10px;
-    color: var(--border);
-    border: 2px solid var(--border);
-    border-radius: 5px;
-    transition: border 0.25s ease-in-out;
-    outline: none;
-
-    &:focus {
-      border: 2px solid var(--primary);
+  <style>
+    body {
+      /* display: flex; */
+      height: 200vh;
+      overflow: scroll;
     }
-  }
+  </style>
 
-  .form-input-label {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    transform: translateY(-50%);
-    color: var(--border);
-    background-color: var(--body);
-    font-size: 14px;
-    padding: 0 10px;
-    transition: all 0.25s ease-in-out;
-  }
+  <body>
+    <div class="boxed mt-4 mb-4">
+      <div class="table-card">
+        <div class="upper-card">
+          <div class="card-header">
+            <div class="heads">
+              <p class="heading">T4</p>
+            </div>
+            <div class="time">
+              <span>6:30 PM</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="headings">
+              <h2>Hassan</h2>
+              <span>6 Guests</span>
+            </div>
+            <div class="btnns">
+              <span class="badge badge-warning">Reserved</span>
+            </div>
+          </div>
+        </div>
+        <div class="inner-cards">
+          <div class="inner-card"></div>
+          <div class="inner-card"></div>
+          <div class="inner-card"></div>
+        </div>
+      </div>
+    </div>
 
-  .form-input:focus~.form-input-label {
-    color: var(--primary);  
-  }
-</style>
+    <div class="boxed mt-4 mb-4">
+      <div class="table-card available-card">
+        <div class="upper-card">
+          <div class="card-header">
+            <div class="heads">
+              <p class="heading">T4</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="btnns">
+              <span class="badge badge-warning">Reserved</span>
+            </div>
+          </div>
+        </div>
+        <div class="inner-card"></div>
+        <div class="inner-card"></div>
+        <div class="inner-card"></div>
+      </div>
+    </div>
 
-<body>
-  <div class="form-input-group">
-    <input class="form-input" type="text" placeholder="#sadfjksj">
-    <label class="form-input-label">Lastname *</label>
-  </div>
-
-  <div class="form-input-group">
-    <input class="form-input" type="password" placeholder="******">
-    <label class="form-input-label">Password *</label>
-  </div>
-
-</body>
-
+    <!-- <div class="boxed mt-4 mb-4">
+      <div class="card table-card-small">
+        <div class="upper-cards">
+          <div class="card-header">
+            <div class="heads">
+              <p class="heading">T1</p>
+            </div>
+            <div class="time">
+              <span>6:30 PM</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="headings">
+              <h2>Hassan</h2>
+              <span>6 Guests</span>
+            </div>
+            <div class="btnns">
+              <span class="badge badge-warning">Reserved</span>
+            </div>
+          </div>
+        </div>
+        <div class="inner-card"></div>
+        <div class="inner-card"></div>
+      </div>
+    </div> -->
+    <!-- <div class="boxed mt-4 mb-4">
+      <div class="card table-cards">
+        <div class="upper-card">
+            <div class="head">
+                <p class="headings">T4</p>
+            </div>
+            <div class="btnns">
+              <span class="badge badge-warning">Available</span>
+            </div>
+        </div>
+        <div class="inner-card"></div>
+        <div class="inner-card"></div>
+        <div class="inner-card"></div>
+      </div>
+    </div>
+    <div class="boxed mt-4 mb-4">
+      <div class="card table-cards-small">
+        <div class="upper-card">
+            <div class="head">
+                <p class="headings">T1</p>
+            </div>
+            <div class="btnns">
+              <span class="badge badge-warning">Available</span>
+            </div>
+        </div>
+        <div class="inner-card"></div>
+        <div class="inner-card"></div>
+      </div>
+    </div> -->
+    <!-- <script src="./assets/js/main.js"></script> -->
+  </body>
 </html>
+
+<!-- <div class="offcanvas">
+        <div class="offcanvas-head">
+            <div class="user-heading">
+                <h1>Table 4</h1>
+                <p>Hassan</p>
+            </div>
+            <div class="user-edit">
+                <i class="bx bx-edit-alt"></i>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <div class="offcanvas-tabs">
+                <div class="tabs">
+                    <button class="tab active" data-nxt-toggle="dine-in">
+                        Dine In
+                    </button>
+                    <button class="tab" data-nxt-toggle="take-away">Take Away</button>
+                    <button class="tab" data-nxt-toggle="delivery">Delivery</button>
+                </div>
+
+                <div class="tab-content">
+                    <div id="dine-in" class="tab-panel active">
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="take-away" class="tab-panel">
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="delivery" class="tab-panel">
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-foot">
+            <div class="price-recipt">
+                <div class="amount">
+                    <div class="left">
+                        <p>Sub Total</p>
+                    </div>
+                    <div class="right">
+                        <p class="subtotal-price">$99.99</p>
+                    </div>
+                </div>
+                <div class="amount">
+                    <div class="left">
+                        <p>Tax 5%</p>
+                    </div>
+                    <div class="right">
+                        <p class="subtotal-price">$14.44</p>
+                    </div>
+                </div>
+                <div class="amount total-price">
+                    <div class="left">
+                        <p>Total</p>
+                    </div>
+                    <div class="right">
+                        <p class="subtotal-price">$99.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->

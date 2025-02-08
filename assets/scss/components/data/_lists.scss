@@ -16,13 +16,20 @@
 }
 
 .inline-list {
+  --icon-color: var(--primary);
+  --icon-size: 1.3rem;
+  --icon-wgt: 500;
+  --icon-padding: 10px;
+  
   margin: 0;
   padding: 0;
+  
   .list-item {
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 0 5px;
+    padding: 5px 12px;
+    margin-bottom: 10px;
     border-radius: 50px;
     transition: all 0.2s ease;
 
@@ -32,15 +39,21 @@
         color: var(--body);
       }
       .icon {
-        color: var(--body);
+        --icon-color: var(--body);
       }
+    }
+    .icon {
+      color: var(--icon-color);
+      font-size: var(--icon-size);
+      font-weight: var(--icon-wgt);
+      padding-right: var(--icon-padding);
     }
     .list-link {
       --fs: 16px;
       color: var(--text);
       text-decoration: none;
       font-size: var(--fs);
-      font-weight: 600;
+      font-weight: 500;
       line-height: 30px;
       width: 100%;
       transition: all 0.2s ease-in-out;

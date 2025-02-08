@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="pages">
+            <div class="sidebar_l">
+                <div class="logo">
+                    <img src="https://s3-alpha-sig.figma.com/img/18ff/db40/ef3764aa576c990f3587b2782874ebe9?Expires=1739145600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IL02k3HKJFD1IsKaeR~67gwCy7aB~7BrGbEwLhmzRbFLnralV26~yYEOoBRQ~dHnJUpaIXjXEFmHzyE~5UtIhd3goeYA67pVIrTxi3IoRtk~unDnUF4TxlehYxnOceGUEwJkMW1thMLD~8bOm1HcXVECCTWfWS8KZU81o8M-ksi5lZCoR1sKnYmNbA7hcMKjOqhFunTD5qKp9iMGNArtnIVlDdXG-rzZmMXe55cE3Gl3xVXG3k-zEX3w-t3yq8fe9S8eeH7L7SiQwFw-c7M5GyTWZmPdfoH0kMQbNilS4WYezbRxFbXpkqt~6y0l9RtcWzXozby4PmqHzqNmywHl9A__" alt="img">
+                </div>
+                <div class="side-list">
+                    <ul class="inline-list">
+                        <li class="list-item">
+                            <i class='bx bx-dish icon'></i>
+                            <a href="#" class="list-link">Menu</a>
+                        </li>
+                        <li class="list-item">
+                            <i class='bx bxs-castle icon'></i>
+                            <a href="#" class="list-link">Table Services</a>
+                        </li>
+                        <li class="list-item">
+                            <i class='bx bx-calendar icon'></i>
+                            <a href="#" class="list-link">Reservation</a>
+                        </li>
+                        <li class="list-item">
+                            <i class='bx bx-bus icon'></i>
+                            <a href="#" class="list-link">Delivery</a>
+                        </li>
+                        <li class="list-item">
+                            <i class='bx bx-scatter-chart icon'></i>
+                            <a href="#" class="list-link">Accounting</a>
+                        </li>
+                        <li class="list-item">
+                            <i class='bx bx-cog icon'></i>
+                            <a href="#" class="list-link">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="logout">                           
+                    <ul class="inline-list">
+                        <li class="list-item">
+                            <i class='bx bx-log-out icon'></i>
+                            <a href="#" class="list-link">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">            
+                <div class="header">
+                    <div class="nav-btn">
+                        <button class="btn">
+                            <i class="bx bx-x"></i>
+                        </button>
+                    </div>
+                    <div class="search">      
+                        <div class="input-group">
+                            <button class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    id="search">
+                                    <path fill="#200E32"
+                                        d="M19.7555474,18.6065254 L16.3181544,15.2458256 L16.3181544,15.2458256 L16.2375905,15.1233001 C16.0877892,14.9741632 15.8829641,14.8901502 15.6691675,14.8901502 C15.4553709,14.8901502 15.2505458,14.9741632 15.1007444,15.1233001 L15.1007444,15.1233001 C12.1794834,17.8033337 7.6781476,17.94901 4.58200492,15.4637171 C1.48586224,12.9784243 0.75566836,8.63336673 2.87568494,5.31016931 C4.99570152,1.9869719 9.30807195,0.716847023 12.9528494,2.34213643 C16.5976268,3.96742583 18.4438102,7.98379036 17.2670181,11.7275931 C17.182269,11.9980548 17.25154,12.2921761 17.4487374,12.4991642 C17.6459348,12.7061524 17.9410995,12.794561 18.223046,12.7310875 C18.5049924,12.667614 18.7308862,12.4619014 18.8156353,12.1914397 L18.8156353,12.1914397 C20.2223941,7.74864367 18.0977423,2.96755391 13.8161172,0.941057725 C9.53449216,-1.08543846 4.38083811,0.250823958 1.68905427,4.08541671 C-1.00272957,7.92000947 -0.424820906,13.1021457 3.0489311,16.2795011 C6.5226831,19.4568565 11.8497823,19.6758854 15.5841278,16.7948982 L18.6276529,19.7705177 C18.9419864,20.0764941 19.4501654,20.0764941 19.764499,19.7705177 C20.0785003,19.4602048 20.0785003,18.9605974 19.764499,18.6502845 L19.764499,18.6502845 L19.7555474,18.6065254 Z"
+                                        transform="translate(2 2)"></path>
+                                </svg>
+                            </button>
+                            <input type="search" class="field" placeholder="Search Product here....">
+                        </div>
+                    </div>
+                    <div class="filter-btn">
+                        <button class="btn">
+                            <i class='bx bx-bar-chart'></i>
+                            <!-- <img src="./assets/images/icon/filter.png" alt="img"> -->
+                        </button>
+                    </div>
+                </div>
+                <div class="categories_c">
+                    <div class="cards categories-cards">
+                        <article class="card categories-card active">
+                            <div class="card-head">
+                                <div class="card-icon">
+                                    <i class='bx bx-grid-alt icon'></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">All</p>
+                            </div>
+                            <div class="card-foot">
+                                <span>235 items</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards categories-cards">
+                        <article class="card categories-card">
+                            <div class="card-head">
+                                <div class="card-icon">
+                                    <i class='bx bx-grid-alt icon'></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Cakes</p>
+                            </div>
+                            <div class="card-foot">
+                                <span>23 items</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cards categories-cards">
+                        <article class="card categories-card">
+                            <div class="card-head">
+                                <div class="card-icon">
+                                    <i class='bx bx-grid-alt icon'></i>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Burgers</p>
+                            </div>
+                            <div class="card-foot">
+                                <span>39 items</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="total_cards">
+                    <div class="row-cols-5">
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p> 
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">                      
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                    <div class="card-badge">
+                                        <span class="badge">20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-green"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card product-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="" class="image">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h1>Tasty Vegetable Salad Healthy Diet</h1>
+                                </div>
+                            </div>
+                            <div class="card-foot d-flex">
+                                <div class="type">
+                                    <i class="bx bx-leaf icon-red"></i>
+                                    <span>Veg</span>
+                                </div>
+                                <div class="price">
+                                    <p>$40.33</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="media-footer">
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc media-muted">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-head">
+                                <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                                <div class="badge badge-primary">Proccess</div>
+                            </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc media-muted">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-head">
+                                <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                                <div class="badge badge-primary">Proccess</div>
+                            </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc media-muted">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-head">
+                                <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                                <div class="badge badge-primary">Proccess</div>
+                            </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc media-muted">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="media-heading">
+                            <h1 class="title">T1</h1>
+                        </div>
+                        <div class="media-body">
+                            <div class="media-head">
+                                <div class="media-title text-ellipsis text-ellipsis-1">Hassan </div>
+                                <div class="badge badge-primary">Proccess</div>
+                            </div>
+                            <div class="media-foot">
+                                <p class="media-desc">6 item</p>
+                                <img src="../images/icon/arrow.png">
+                                <span class="media-desc">Kitchen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <div class="sidebar_r">
+                <div class="sidebar_head">
+                    <div class="head_heading">
+                        <p class="sidebar_title">Table 4</p>
+                        <span>Floyd Miles</span>
+                    </div>
+                    <div class="edit_icon">
+                        <button><i class='bx bx-edit-alt'></i></button>
+                    </div>
+                </div>
+                <div class="sidebar_body">
+                    <div class="tabs">
+                        <button class="tab active" data-nxt-toggle='dine-in'>Dine In</button>
+                        <button class="tab" data-nxt-toggle='take-away'>Take Away</button>
+                        <button class=" tab" data-nxt-toggle='delivery'>Delivery</button>
+                    </div>
+                    <div class="sidebar-body_cards">
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bucket-card">
+                            <div class="card-head">
+                                <div class="card-image">
+                                    <img src="../images/product-image.png" alt="Bucket product image" class="image">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-title">
+                                    Original Cheese Meat Burger With Chips (Non Veg)
+                                </div>
+                                <div class="qty-price">
+                                    <div class="qty">1x</div>
+                                    <div class="price text-primary">$24.99</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar_footer">
+        
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>

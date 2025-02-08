@@ -1,5 +1,5 @@
 .btn {
-  --btn-p: 0.6rem 0.8rem;
+  --btn-p: 0.5rem 1rem;
   --btn-rounded: 10px;
   --btn-border: 1px solid var(--border-color);
   --btn-c: var(--text);
@@ -14,7 +14,7 @@
   // --btn-w: 60px;
   --btn-bs: transparent;
   --btn-size: 0.9rem;
-  --box-s: var(--shadow);
+  --box-s: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
 
   border: var(--btn-border);
   outline: none;
@@ -183,6 +183,7 @@
 }
 .btn-pill {
   --btn-rounded: 50px;
+  font-weight: 500;
 }
 .btn-icon {
   display: inline-flex;
